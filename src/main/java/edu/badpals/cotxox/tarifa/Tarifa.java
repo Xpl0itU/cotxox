@@ -2,8 +2,6 @@ package edu.badpals.cotxox.tarifa;
 
 import edu.badpals.cotxox.carrera.Carrera;
 
-import java.math.*;
-
 public class Tarifa {
     public static final double COSTE_MILLA = 1.35;
     public static final double COSTE_MINUTO = 0.35;

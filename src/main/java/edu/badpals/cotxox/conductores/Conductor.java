@@ -70,7 +70,7 @@ public class Conductor {
 
     private void calcularValoracionMedia() {
         Optional<Byte> sumValoracionesOpt = valoraciones.stream().reduce((a, b) -> (byte) (a + b));
-        if (!sumValoracionesOpt.isPresent()) {
+        if (sumValoracionesOpt.isEmpty()) {
             return;
         }
         valoracionMedia = (double) sumValoracionesOpt.get() / valoraciones.size();

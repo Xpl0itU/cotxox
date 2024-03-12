@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class PoolConductores {
-    private List<Conductor> poolConductores;
+    private final List<Conductor> poolConductores;
 
     public PoolConductores(List<Conductor> poolConductores) {
         this.poolConductores = poolConductores;
